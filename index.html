@@ -1,0 +1,44 @@
+<!-- simple html page -->
+<html>
+    <head>
+    <title>Todo-lists</title>
+     
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do-Lists</h1>
+            <p>
+                <!-- ฟอร์ม todo -->
+                <form id="todo-form" action="/save-todolist">
+                    <!-- หัวข้อ todo -->
+                    <label>Todo:</label><br>
+                    <!-- ฟอร์มกรอก todo -->
+                    <input type="text" id="todo" value=""><br>
+                    <!-- คำอธิบาย todo -->
+                    <label>Description:</label><br>
+                    <input type="text" id="description" value=""><br>
+                    <!-- กำหนดเวลาสำหรับ todo -->
+                    <label>Deadline:</label><br>
+                    <input type="date" id="deadline" value=""><br><br>
+                    <!-- ปุ่ม Add-->
+                    <input type="submit" value="Add">
+                </form>
+            </p>
+            <!--โชว์ todolist = [] -->
+            <table id="todo-list">
+                <thead>
+                    <tr>
+                        <th>Todo</th>
+                        <th>Description</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+
+    </body>
+    <script src="func.js"></script> 
+</html>
